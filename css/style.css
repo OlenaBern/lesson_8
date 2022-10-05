@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: "Lato", sans-serif;
+	color: #424551;
+}
+[class*= "__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.block-one h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.block-one p{
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+.block-one h2{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.list-one li{
+	line-height: 160%;
+	background: url("../img/icons/check.svg") 0 5px no-repeat;
+	padding-left: 32px;
+}
+.block-one{
+	margin-bottom: 100px;
+}
+.block-two h4{
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+.block-two h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+}
+.block-two h3{
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.list-two li{
+	font-weight: 700;
+	line-height: 160%;
+}
+.list-two li:first-child::before{
+	content: "";
+	background: url("../img/icons/star.svg") 0 2px no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.list-two li:nth-child(2)::before{
+	content: "";
+	background: url("../img/icons/play.svg") 0 1px no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.list-two li:last-child::before{
+	content: "";
+	background: url("../img/icons/profile.svg") 0 1px no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.list-two{
+	margin-bottom: 32px;
+}
+.block-two p{
+	line-height: 160%;
+	margin-bottom: 40px;
+}
+.block-three h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.hover h4,
+.active h4,
+.visited h4,
+.hover-two h4,
+.focus h4,
+.target h4{
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+.hover{
+	margin-bottom: 25px;
+	max-width: 300px;
+}
+.hover a{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.hover a:hover{
+	color: rgb(4, 207, 253);
+}
+.hover-two ul{
+	margin-left: 20px;
+}
+.hover-two ul ul{
+	display: none;
+}
+/* .hover-two ul li:hover ul{
+	display: block;
+} */
+.hover-two ul a:hover + ul{
+	display: block;
+}
+.section{
+	background-color: rgb(102, 138, 186);
+	color: white;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+.section-item{
+	visibility: hidden;
+}
+.section:hover .section-item{
+	visibility: visible;
+}
+.active{
+	margin-bottom: 25px;
+}
+.active a:active{
+	color: orangered;
+	text-decoration: underline;
+}
+.visited a:visited{
+	color: rgb(173, 2, 173);
+}
+.visited{
+	margin-bottom: 25px;
+}
+.focus a:focus{
+	outline: 2px dotted rgb(34, 163, 8);
+}
+.focus{
+	margin-bottom: 25px;
+}
+.target{
+	margin-bottom: 25px;
+}
+.section-two{
+	margin-bottom: 25px;
+	background-color: rgb(231, 164, 41);
+	color: white;
+	padding: 15px;
+	display: none;
+	max-width: 300px;
+}
+.section-two:target{
+	display: block;
+}
+.block-four{
+	font-size: 0px;
+	margin-bottom: 500px;
+}
+.block-four h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.one{
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	display: inline-block;
+}
+.two{
+	height: 40px;
+	width: 500px;
+	display: inline-block;
+	background-color: rgb(74, 74, 249);
+	margin-left: 40px;
+	visibility: hidden;
+}
+.one:hover .two{
+	visibility: visible;
+}
+.three{
+	height: 120px;
+	width: 40px;
+	display: inline-block;
+	background-color: rgb(74, 74, 249);
+	margin-left: 500px;
+	visibility: hidden;
+}
+.two:hover .three{
+	visibility: visible;
+}
+.four{
+	background-color: rgb(74, 74, 249);
+	height: 30px;
+	width: 500px;
+	display: inline-block;
+	margin-left: -500px;
+	margin-top: 90px;
+	visibility: hidden;
+}
+.three:hover .four{
+	visibility: visible;
+}
+.five{
+	background-color: rgb(74, 74, 249);
+	height: 100px;
+	width: 20px;
+	display: inline-block;
+	margin-top: 30px;
+	visibility: hidden;
+}
+.four:hover .five{
+	visibility: visible;
+}
+.six{
+	background-color: rgb(74, 74, 249);
+	height: 10px;
+	width: 480px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 90px;
+	visibility: hidden;
+}
+.five:hover .six{
+	visibility: visible;
+}
+.seven{
+	background-color: red;
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	margin-left: 480px;
+	visibility: hidden;
+}
+.six:hover .seven{
+	visibility: visible;
+}
+.eight{
+	max-width: 500px;
+	margin-top: 15px;
+	margin-left: -500px;
+	visibility: hidden;
+}
+.seven:hover .eight{
+	visibility: visible;
+}
+.block-five{
+	font-size: 0px;
+	margin-bottom: 500px;
+}
+.block-five h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.first{
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	display: inline-block;
+}
+.first:hover + .second,
+.second:hover{
+	visibility: visible;
+}
+.second{
+	height: 40px;
+	width: 500px;
+	display: inline-block;
+	background-color: rgb(74, 74, 249);
+	visibility: hidden;
+}
+.second:hover + .third,
+.third:hover{
+	visibility: visible;
+}
+.third{
+	height: 120px;
+	width: 40px;
+	display: inline-block;
+	background-color: rgb(74, 74, 249);
+	display: block;
+	margin-left: 500px;
+	visibility: hidden;
+}
+.third:hover + .fourth,
+.fourth:hover{
+	visibility: visible;
+}
+.fourth{
+	background-color: rgb(74, 74, 249);
+	height: 30px;
+	width: 500px;
+	display: inline-block;
+	margin-top: -30px;
+	visibility: hidden;
+}
+.fourth:hover + .fifth,
+.fifth:hover{
+	visibility: visible;
+}
+.fifth{
+	background-color: rgb(74, 74, 249);
+	height: 100px;
+	width: 20px;
+	display: block;
+	visibility: hidden;
+}
+.fifth:hover + .sixth,
+.sixth:hover{
+	visibility: visible;
+}
+.sixth{
+	background-color: rgb(74, 74, 249);
+	height: 10px;
+	width: 480px;
+	display: inline-block;
+	visibility: hidden;
+}
+.sixth:hover + .seventh,
+.seventh:hover{
+	visibility: visible;
+}
+.seventh{
+	background-color: red;
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	visibility: hidden;
+}
+.seventh:hover + .eighth,
+.eight:hover{
+	visibility: visible;
+}
+.eighth{
+	max-width: 500px;
+	visibility: hidden;
+}
